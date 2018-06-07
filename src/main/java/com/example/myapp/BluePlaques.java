@@ -1,13 +1,14 @@
 package com.example.myapp;
 
 import com.example.myapp.ImmutablePlaquePhoto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.immutables.value.Value;
 
 import javax.annotation.Nullable;
 import java.util.List;
-import java.util.Optional;
 
 @Value.Immutable
 @Value.Style(jdkOnly=true)
@@ -18,43 +19,73 @@ public abstract class BluePlaques {
     @Value.Immutable
     @JsonDeserialize(as = com.example.myapp.ImmutableBluePlaque.class)
     public static abstract class BluePlaque {
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         public abstract int id();
-        @JsonProperty("erected_at")
+
+        @JsonProperty(value = "erected_at", access = JsonProperty.Access.WRITE_ONLY)
         @Nullable
         public abstract String erectedAt();
+
         @Nullable
         public abstract String latitude();
         @Nullable
         public abstract String longitude();
-        @JsonProperty("updated_at")
+
+        @JsonProperty(value = "updated_at", access = JsonProperty.Access.WRITE_ONLY)
         public abstract String updatedAt();
+
         public abstract String inscription();
-        @JsonProperty("is_current")
+
+        @JsonProperty(value = "is_current", access = JsonProperty.Access.WRITE_ONLY)
         public abstract String isCurrent();
+
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         public abstract String uri();
+
         public abstract String title();
+
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         public abstract String address();
+
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         @Nullable
         public abstract String subjects();
-        @JsonProperty("colour_name")
+
+        @JsonProperty(value = "colour_name", access = JsonProperty.Access.WRITE_ONLY)
         @Nullable
         public abstract String colourName();
-        @JsonProperty("machine_tag")
+
+        @JsonProperty(value = "machine_tag", access = JsonProperty.Access.WRITE_ONLY)
         public abstract String machineTag();
+
         @JsonProperty("geolocated?")
         public abstract boolean isGeolocated();
-        @JsonProperty("photographed?")
+
+
+        @JsonProperty(value = "photographed?", access = JsonProperty.Access.WRITE_ONLY)
         public abstract String isPhotographed();
-        @JsonProperty("thumbnail_url")
+
+        @JsonProperty(value = "thumbnail_url")
         @Nullable
         public abstract String thumbnailUrl();
+
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         public abstract List<PlaquePhoto> photos();
+
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         public abstract List<PlaqueOrganisation> organisations();
+
         @Nullable
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         public abstract PlaqueLanguage language();
+
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         public abstract PlaqueArea area();
+
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
         public abstract List<PlaquePerson> people();
-        @JsonProperty("see_also")
+
+        @JsonProperty(value = "see_also", access = JsonProperty.Access.WRITE_ONLY)
         public abstract List<SeeAlso> seeAlso();
 
         @Value.Immutable
