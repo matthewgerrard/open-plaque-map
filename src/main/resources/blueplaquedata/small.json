@@ -1,0 +1,72 @@
+{
+  "bluePlaques": [
+  {
+    "id": 41936,
+    "erected_at": null,
+    "latitude": 50.51017,
+    "longitude": -3.61166,
+    "updated_at": "2016-09-28T08:15:40.057+01:00",
+    "inscription": "Abbotskerswell Cottage Art School was founded in this cottage c1883 by owner of Allervale Art Pottery and champion of the Arts and Crafts Movement John Phillips. This plaque was erected by Torquay Pottery Collectors Society in appreciation of those who taught and those who learnt here and the wondrous work they did.",
+    "is_current": true,
+    "uri": "http://openplaques.org/plaques/41936",
+    "title": "Abbotskerswell Cottage Art School and John Phillips black plaque",
+    "address": "",
+    "subjects": "Abbotskerswell Cottage Art School and John Phillips",
+    "colour_name": "black",
+    "machine_tag": "openplaques:id=41936",
+    "geolocated?": true,
+    "photographed?": true,
+    "thumbnail_url": "http://s1.geograph.org.uk/geophotos/01/61/45/1614553_67858e1e_120x120.jpg",
+    "photos": [
+      {
+        "uri": "http://openplaques.org/photos/30051.json",
+        "thumbnail_url": "http://s1.geograph.org.uk/geophotos/01/61/45/1614553_67858e1e_120x120.jpg",
+        "shot_name": "close up",
+        "attribution": "&copy; Derek Harper on Geograph CC BY-SA 2.0"
+      },
+      {
+        "uri": "http://openplaques.org/photos/39911.json",
+        "thumbnail_url": "http://s2.geograph.org.uk/geophotos/01/61/45/1614546_7d4830ce_120x120.jpg",
+        "shot_name": "establishing shot",
+        "attribution": "&copy; Derek Harper on Geograph CC BY-SA 2.0"
+      },
+      {
+        "uri": "http://openplaques.org/photos/30849.json",
+        "thumbnail_url": "http://s1.geograph.org.uk/geophotos/02/80/87/2808793_3c94cbf0_120x120.jpg",
+        "shot_name": "establishing shot",
+        "attribution": "&copy; David Smith on Geograph CC BY-SA 2.0"
+      }
+    ],
+    "organisations": [
+      {
+        "name": "Torquay Pottery Collectors Society",
+        "uri": "http://openplaques.org/organisations/torquay_pottery_collectors_society.json"
+      }
+    ],
+    "language": {
+      "name": "English",
+      "alpha2": "en"
+    },
+    "area": {
+      "name": "Abbotskerswell",
+      "uri": "http://openplaques.org/places/gb/areas/abbotskerswell.json",
+      "country": {
+        "name": "United Kingdom",
+        "alpha2": "gb",
+        "uri": "http://openplaques.org/places/gb.json"
+      }
+    },
+    "people": [
+      {
+        "uri": "http://openplaques.org/people/18894.json",
+        "full_name": "Abbotskerswell Cottage Art School"
+      },
+      {
+        "uri": "http://openplaques.org/people/18895.json",
+        "full_name": "John Phillips"
+      }
+    ],
+    "see_also": []
+  }
+]
+}
